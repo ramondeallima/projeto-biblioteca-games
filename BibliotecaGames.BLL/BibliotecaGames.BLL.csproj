@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B53BF0C2-13F9-4EAA-86D1-3440845EBFE4}</ProjectGuid>
+    <ProjectGuid>{91B37F24-B276-460B-898C-EEA3AD5F8D8D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BibliotecaGames.BLL</RootNamespace>
@@ -41,11 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modelo\Editor.cs" />
-    <Compile Include="Modelo\Genero.cs" />
-    <Compile Include="Modelo\Id.cs" />
-    <Compile Include="Modelo\Jogo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BibliotecaGames.DAL\BibliotecaGames.DAL.csproj">
+      <Project>{bcd94edd-0a45-4c7f-8296-b4f2520ff28b}</Project>
+      <Name>BibliotecaGames.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BibliotecaGames.Entities2\BibliotecaGames.Entities.csproj">
+      <Project>{6c981db1-1a6b-4071-91d6-176be0c5c76a}</Project>
+      <Name>BibliotecaGames.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Servicos\" />

@@ -34,3 +34,7 @@ C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\obj\Debug\
 C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\obj\Debug\BibliotecaGames.Site.csproj.CopyComplete
 C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\obj\Debug\BibliotecaGames.Site.dll
 C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\obj\Debug\BibliotecaGames.Site.pdb
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.BLL.dll
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.Entities2.dll
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.BLL.pdb
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.Entities2.pdb

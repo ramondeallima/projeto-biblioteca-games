@@ -1,2 +1,11 @@
-C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\obj\Debug\BibliotecaGames.BLL.csprojAssemblyReference.cache
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\bin\Debug\BibliotecaGames.BLL.dll
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\bin\Debug\BibliotecaGames.BLL.pdb
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\bin\Debug\BibliotecaGames.Entities2.dll
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\bin\Debug\BibliotecaGames.Entities2.pdb
 C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\obj\Debug\BibliotecaGames.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\obj\Debug\BibliotecaGames.BLL.csproj.CopyComplete
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\obj\Debug\BibliotecaGames.BLL.dll
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\obj\Debug\BibliotecaGames.BLL.pdb
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\bin\Debug\BibliotecaGames.DAL.dll
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\bin\Debug\BibliotecaGames.DAL.pdb
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.BLL\obj\Debug\BibliotecaGames.BLL.csprojAssemblyReference.cache

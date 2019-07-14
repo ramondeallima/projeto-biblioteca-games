@@ -1,0 +1,9 @@
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Entities\bin\Debug\netstandard2.0\BibliotecaGames.Entities.deps.json
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Entities\bin\Debug\netstandard2.0\BibliotecaGames.Entities.dll
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Entities\bin\Debug\netstandard2.0\BibliotecaGames.Entities.pdb
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Entities\obj\Debug\netstandard2.0\BibliotecaGames.Entities.csprojAssemblyReference.cache
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Entities\obj\Debug\netstandard2.0\BibliotecaGames.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Entities\obj\Debug\netstandard2.0\BibliotecaGames.Entities.AssemblyInfoInputs.cache
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Entities\obj\Debug\netstandard2.0\BibliotecaGames.Entities.AssemblyInfo.cs
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Entities\obj\Debug\netstandard2.0\BibliotecaGames.Entities.dll
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Entities\obj\Debug\netstandard2.0\BibliotecaGames.Entities.pdb
