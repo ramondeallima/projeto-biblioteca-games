@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -28,6 +29,7 @@ namespace BibliotecaGames.Site.Autenticacao
             try
             {
                 var usuario = _loginBO.ObterUsuarioParaLogar(nomeUsuario, senha);
+                FormsAuthentication.RedirectFromLoginPage(nomeUsuario, false);
             }
             catch (UsuarioNaoCadastradoException)
             {
