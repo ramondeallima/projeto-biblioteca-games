@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BibliotecaGames.BLL.Autenticacao;
+using BibliotecaGames.BLL.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +11,8 @@ namespace BibliotecaGames.Site.Autenticacao
 {
     public partial class Login : System.Web.UI.Page
     {
+        private LoginBO _loginBO;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -16,7 +20,25 @@ namespace BibliotecaGames.Site.Autenticacao
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
-            TxtUsuario.Text = "Usuário";
+            _loginBO = new LoginBO();
+
+            var nomeUsuario = TxtUsuario.Text;
+            var senha = TxtSenha.Text;
+
+            try
+            {
+                var usuario = _loginBO.ObterUsuarioParaLogar(nomeUsuario, senha);
+            }
+            catch (UsuarioNaoCadastradoException)
+            {
+                LBLStatus.Text = "Usuário não cadastrado";
+            }
+            catch (Exception)
+            {
+                LBLStatus.Text = "Ocorreu um erro inesperado, favor consultar o administrador do sistema.";
+            }
+            
+
         }
     }
 }

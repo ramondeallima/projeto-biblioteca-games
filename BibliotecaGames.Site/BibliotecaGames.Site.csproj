@@ -161,8 +161,8 @@
       <Project>{91b37f24-b276-460b-898c-eea3ad5f8d8d}</Project>
       <Name>BibliotecaGames.BLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BibliotecaGames.Entities2\BibliotecaGames.Entities.csproj">
-      <Project>{6c981db1-1a6b-4071-91d6-176be0c5c76a}</Project>
+    <ProjectReference Include="..\BibliotecaGames.Entities\BibliotecaGames.Entities.csproj">
+      <Project>{f22f23fc-9805-413b-878e-98fd8c3b3b25}</Project>
       <Name>BibliotecaGames.Entities</Name>
     </ProjectReference>
   </ItemGroup>

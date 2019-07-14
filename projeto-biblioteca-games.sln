@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaGames.Site", "Bib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaGames.BLL", "BibliotecaGames.BLL\BibliotecaGames.BLL.csproj", "{91B37F24-B276-460B-898C-EEA3AD5F8D8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaGames.Entities", "BibliotecaGames.Entities2\BibliotecaGames.Entities.csproj", "{6C981DB1-1A6B-4071-91D6-176BE0C5C76A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaGames.Entities", "BibliotecaGames.Entities\BibliotecaGames.Entities.csproj", "{F22F23FC-9805-413B-878E-98FD8C3B3B25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{91B37F24-B276-460B-898C-EEA3AD5F8D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91B37F24-B276-460B-898C-EEA3AD5F8D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91B37F24-B276-460B-898C-EEA3AD5F8D8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C981DB1-1A6B-4071-91D6-176BE0C5C76A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C981DB1-1A6B-4071-91D6-176BE0C5C76A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C981DB1-1A6B-4071-91D6-176BE0C5C76A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C981DB1-1A6B-4071-91D6-176BE0C5C76A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F22F23FC-9805-413B-878E-98FD8C3B3B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22F23FC-9805-413B-878E-98FD8C3B3B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22F23FC-9805-413B-878E-98FD8C3B3B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22F23FC-9805-413B-878E-98FD8C3B3B25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

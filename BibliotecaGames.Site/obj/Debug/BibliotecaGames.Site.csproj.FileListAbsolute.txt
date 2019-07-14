@@ -35,6 +35,8 @@ C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\obj\Debug\
 C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\obj\Debug\BibliotecaGames.Site.dll
 C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\obj\Debug\BibliotecaGames.Site.pdb
 C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.BLL.dll
-C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.Entities2.dll
 C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.BLL.pdb
-C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.Entities2.pdb
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.Entities.dll
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.DAL.dll
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.Entities.pdb
+C:\Users\Ramon\Projetos\projeto-biblioteca-games\BibliotecaGames.Site\bin\BibliotecaGames.DAL.pdb

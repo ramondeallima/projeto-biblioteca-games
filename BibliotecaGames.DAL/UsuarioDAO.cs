@@ -33,6 +33,8 @@ namespace BibliotecaGames.DAL
                     usuario.Senha        = reader["SENHA"].ToString();
                     usuario.Perfil       = Convert.ToChar(reader["PERFIL"]);
                 }
+
+                return usuario;
             }
             catch (Exception)
             {
