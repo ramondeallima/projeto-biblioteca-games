@@ -8,9 +8,9 @@ namespace BibliotecaGames.Entities
 {
     public class Jogo : IntID
     {
-        public double ValorPago { get; set; }
+        public double? ValorPago { get; set; }
         public string Imagem { get; set; }
-        public DateTime DataCompra { get; set; }
+        public DateTime? DataCompra { get; set; }
         public string Titulo { get; set; }
     }
 }

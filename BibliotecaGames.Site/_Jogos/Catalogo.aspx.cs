@@ -1,4 +1,5 @@
 ﻿using BibliotecaGames.Entities;
+using BibliotecaGames.BLL.Autenticacao;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,21 +11,22 @@ namespace BibliotecaGames.Site._Jogos
 {
     public partial class Catalogo : System.Web.UI.Page
     {
+        private JogosBO _jogosBO;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            CarregarJogosNoRepeater();
+            if (!Page.IsPostBack)
+            {
+                CarregarJogosNoRepeater();
+            }
+
         }
 
         private void CarregarJogosNoRepeater()
         {
-            RepeaterJogos.DataSource = new List<Jogo>
-            {
-                new Jogo {Titulo = "Titulo 1"},
-                new Jogo {Titulo = "Titulo 2"},
-                new Jogo {Titulo = "Titulo 3"},
-                new Jogo {Titulo = "Titulo 4"},
-                new Jogo {Titulo = "Titulo 5"}
-            };
+            _jogosBO = new JogosBO();
+
+            RepeaterJogos.DataSource = _jogosBO.ObterTodosOsJogos();
             RepeaterJogos.DataBind();
         }
     }
