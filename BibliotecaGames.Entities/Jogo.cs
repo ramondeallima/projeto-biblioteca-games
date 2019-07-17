@@ -11,5 +11,6 @@ namespace BibliotecaGames.Entities
         public double ValorPago { get; set; }
         public string Imagem { get; set; }
         public DateTime DataCompra { get; set; }
+        public string Titulo { get; set; }
     }
 }

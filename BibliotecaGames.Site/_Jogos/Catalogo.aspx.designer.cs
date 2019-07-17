@@ -13,12 +13,12 @@ namespace BibliotecaGames.Site._Jogos {
     public partial class Catalogo {
         
         /// <summary>
-        /// Controle Repeater1.
+        /// Controle RepeaterJogos.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater1;
+        protected global::System.Web.UI.WebControls.Repeater RepeaterJogos;
     }
 }
