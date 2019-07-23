@@ -25,13 +25,13 @@
 
         <div class="form-group">
             <label for="Genero">Gênero</label>
-            <asp:DropDownList runat="server" ID="DDLGenero" CssClass="form-control" DataTextField="DESCRICAO"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="DDLGenero" CssClass="form-control" DataValueField="ID" DataTextField="DESCRICAO"></asp:DropDownList>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="DDLGenero" ErrorMessage="O preenchimento do gênero é obrigatório!"></asp:RequiredFieldValidator>
         </div>
         
         <div class="form-group">
             <label for="DDLEditor">Editor</label>
-            <asp:DropDownList ID="DDLEditor" runat="server" DataTextField="Nome" CssClass="form-control"></asp:DropDownList>
+            <asp:DropDownList ID="DDLEditor" runat="server" DataValueField="ID" DataTextField="NOME" CssClass="form-control"></asp:DropDownList>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="DDLEditor" ErrorMessage="O preenchimento do editor é obrigatório!!"></asp:RequiredFieldValidator>
         </div>
        

@@ -60,9 +60,10 @@ namespace BibliotecaGames.DAL
                                                 ([TITULO]
                                                 ,[VALOR_PAGO]
                                                 ,[DATA_COMPRA]
-                                                ,[IMAGEM]
+                                                ,[ID_GENERO]
                                                 ,[ID_EDITOR]
-                                                ,[ID_GENERO])
+                                                ,[IMAGEM]
+                                                 )
                                         VALUES
                                                 (@TITULO,
                                                  @VALOR_PAGO

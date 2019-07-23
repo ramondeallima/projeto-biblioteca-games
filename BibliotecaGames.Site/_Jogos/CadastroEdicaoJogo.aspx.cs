@@ -13,6 +13,7 @@ namespace BibliotecaGames.Site._Jogos
     {
         private GeneroBO _generoBO;
         private EditorBO _editorBO;
+        private JogosBO _jogosBO;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -25,16 +26,42 @@ namespace BibliotecaGames.Site._Jogos
 
         protected void BTNGravar_Click(object sender, EventArgs e)
         {
+            var _jogosBO = new JogosBO();
             var jogo = new Jogo();
 
             jogo.Titulo     = TXTTitulo.Text;
             jogo.ValorPago  = string.IsNullOrWhiteSpace(TXTValorPago.Text) ? (double?) null : Convert.ToDouble(TXTValorPago.Text);
-            jogo.DataCompra = string.IsNullOrWhiteSpace(TXTDataCompra.Text) ? (DateTime?) null : Convert.ToDateTime(TXTDataCompra.Text);
-            jogo.Imagem     = Imagem.FileName;
+            jogo.DataCompra = string.IsNullOrWhiteSpace(TXTDataCompra.Text) ? (DateTime?)null : Convert.ToDateTime(TXTDataCompra.Text);
+            jogo.Imagem     = GravarImagemNoDisco();
             jogo.IDEditor   = Convert.ToInt32(DDLEditor.SelectedValue);
             jogo.IDGenero   = Convert.ToInt32(DDLGenero.SelectedValue);
 
+            _jogosBO.InserirNovoJogo(jogo);
         }
+
+        private string GravarImagemNoDisco()
+        {
+            if (Imagem.HasFile)
+            {
+                try
+                {
+                    var caminho = $"{AppDomain.CurrentDomain.BaseDirectory}Content\\ImagensJogos\\";
+                    var fileName = $"{DateTime.Now.ToString("yyyyMMddhhmmss")}{Imagem.FileName}";
+                    Imagem.SaveAs($"{caminho}{fileName}");
+                    return fileName;
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+            else
+            {
+                return null;
+            }
+        }
+
 
         private void CarregarEditoresNaCombo()
         {

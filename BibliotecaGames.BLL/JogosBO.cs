@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using BibliotecaGames.Entities;
 using BibliotecaGames.BLL.Exceptions;
 
-namespace BibliotecaGames.BLL.Autenticacao
+namespace BibliotecaGames.BLL
 {
     public class JogosBO
     {
