@@ -5,7 +5,8 @@
     <div class="container">
         <div class="form-group">
             <label for="TxtTitulo">Título</label>
-            <asp:TextBox runat="server" ID="TxtTitulo" CssClass="form-control"></asp:TextBox>
+            <asp:TextBox runat="server" ID="TXTTitulo" CssClass="form-control"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RFVTitulo" runat="server" ControlToValidate="TXTTitulo" ErrorMessage="O preenchimento do título é obrigatório!"></asp:RequiredFieldValidator>
         </div>
         <div class="form-group">
             <label for="ValorPago">Valor Pago</label>
@@ -25,13 +26,20 @@
         <div class="form-group">
             <label for="Genero">Gênero</label>
             <asp:DropDownList runat="server" ID="DDLGenero" CssClass="form-control"></asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="DDLGenero" ErrorMessage="O preenchimento do gênero é obrigatório!"></asp:RequiredFieldValidator>
         </div>
         
         <div class="form-group">
             <label for="DDLEditor">Editor</label>
             <asp:DropDownList ID="DDLEditor" runat="server" DataValueField="ID" DataTextField="Nome" CssClass="form-control"></asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="DDLEditor" ErrorMessage="O preenchimento do editor é obrigatório!!"></asp:RequiredFieldValidator>
         </div>
        
-        <asp:Button  ID="BTNGravar" Text="Gravar" CssClass="btn btn-primary" runat="server"/>
+        <asp:Button  ID="BTNGravar" Text="Gravar" CssClass="btn btn-primary" runat="server" OnClick="BTNGravar_Click"/>
+        <asp:ValidationSummary runat="server" 
+                               ID="VSCamposObrigatorios" 
+                               DisplayMode="BulletList" 
+                               EnableClientScript="true" 
+                               HeaderText="Alguns erros foram encontrados, verifique abaixo:"/>
     </div>
 </asp:Content>

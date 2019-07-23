@@ -13,13 +13,22 @@ namespace BibliotecaGames.Site._Jogos {
     public partial class CadastroEdicaoJogo {
         
         /// <summary>
-        /// Controle TxtTitulo.
+        /// Controle TXTTitulo.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTitulo;
+        protected global::System.Web.UI.WebControls.TextBox TXTTitulo;
+        
+        /// <summary>
+        /// Controle RFVTitulo.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVTitulo;
         
         /// <summary>
         /// Controle ValorPago.
@@ -58,6 +67,15 @@ namespace BibliotecaGames.Site._Jogos {
         protected global::System.Web.UI.WebControls.DropDownList DDLGenero;
         
         /// <summary>
+        /// Controle RequiredFieldValidator1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        
+        /// <summary>
         /// Controle DDLEditor.
         /// </summary>
         /// <remarks>
@@ -67,6 +85,15 @@ namespace BibliotecaGames.Site._Jogos {
         protected global::System.Web.UI.WebControls.DropDownList DDLEditor;
         
         /// <summary>
+        /// Controle RequiredFieldValidator2.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        
+        /// <summary>
         /// Controle BTNGravar.
         /// </summary>
         /// <remarks>
@@ -74,5 +101,14 @@ namespace BibliotecaGames.Site._Jogos {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BTNGravar;
+        
+        /// <summary>
+        /// Controle VSCamposObrigatorios.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary VSCamposObrigatorios;
     }
 }

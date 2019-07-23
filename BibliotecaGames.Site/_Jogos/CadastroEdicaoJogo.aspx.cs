@@ -13,5 +13,10 @@ namespace BibliotecaGames.Site._Jogos
         {
 
         }
+
+        protected void BTNGravar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
