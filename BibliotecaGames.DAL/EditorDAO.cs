@@ -17,7 +17,7 @@ namespace BibliotecaGames.DAL
 
                 SqlCommand command = new SqlCommand();
                 command.Connection = Conexao.connection;
-                command.CommandText = "SELECT * FROM EDITORES";
+                command.CommandText = "SELECT * FROM EDITORES ORDER BY NOME";
 
                 Conexao.Conectar();
 

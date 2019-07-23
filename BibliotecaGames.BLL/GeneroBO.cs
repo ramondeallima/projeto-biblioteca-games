@@ -12,7 +12,7 @@ namespace BibliotecaGames.BLL
     {
         private GeneroDAO _generoDAO;
 
-        public List<Genero> ObterTodosOsJogos()
+        public List<Genero> ObterTodosOsGeneros()
         {
             _generoDAO = new GeneroDAO();
             return _generoDAO.ObterTodosOsGeneros();

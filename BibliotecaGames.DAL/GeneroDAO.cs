@@ -17,7 +17,7 @@ namespace BibliotecaGames.DAL
 
                 SqlCommand command = new SqlCommand();
                 command.Connection = Conexao.connection;
-                command.CommandText = "SELECT * FROM GENEROS";
+                command.CommandText = "SELECT * FROM GENEROS ORDER BY DESCRICAO";
 
                 Conexao.Conectar();
 
