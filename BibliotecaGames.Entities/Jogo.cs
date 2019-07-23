@@ -12,5 +12,9 @@ namespace BibliotecaGames.Entities
         public string Imagem { get; set; }
         public DateTime? DataCompra { get; set; }
         public string Titulo { get; set; }
+        public int IDGenero { get; set; }
+        public Genero Genero { get; set; }
+        public int IDEditor { get; set; }
+        public Editor Editor { get; set; }
     }
 }

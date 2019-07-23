@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BibliotecaGames.Entities;
+using BibliotecaGames.BLL.Exceptions;
 
 namespace BibliotecaGames.BLL.Autenticacao
 {
@@ -16,6 +17,29 @@ namespace BibliotecaGames.BLL.Autenticacao
         {
             _jogoDAO = new JogoDAO();
             return _jogoDAO.ObterTodosOsJogos();
+        }
+
+        public void InserirNovoJogo(Jogo jogo)
+        {
+            ValidarJogo(jogo);
+
+            _jogoDAO = new JogoDAO();
+            var linhasAfetadas = _jogoDAO.InserirJogo(jogo);
+
+            if (linhasAfetadas == 0)
+            {
+                throw new JogoNaoCadastradoException();
+            }
+        }
+
+        public void ValidarJogo(Jogo jogo)
+        {
+            if (string.IsNullOrWhiteSpace(jogo.Titulo) ||
+                jogo.IDEditor == 0 ||
+                jogo.IDGenero == 0)
+            {
+                throw new JogoInvalidoException();
+            }
         }
     }
 }

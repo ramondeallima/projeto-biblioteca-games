@@ -1,4 +1,5 @@
 ﻿using BibliotecaGames.BLL;
+using BibliotecaGames.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,14 @@ namespace BibliotecaGames.Site._Jogos
 
         protected void BTNGravar_Click(object sender, EventArgs e)
         {
+            var jogo = new Jogo();
+
+            jogo.Titulo     = TXTTitulo.Text;
+            jogo.ValorPago  = string.IsNullOrWhiteSpace(TXTValorPago.Text) ? (double?) null : Convert.ToDouble(TXTValorPago.Text);
+            jogo.DataCompra = string.IsNullOrWhiteSpace(TXTDataCompra.Text) ? (DateTime?) null : Convert.ToDateTime(TXTDataCompra.Text);
+            jogo.Imagem     = Imagem.FileName;
+            jogo.IDEditor   = Convert.ToInt32(DDLEditor.SelectedValue);
+            jogo.IDGenero   = Convert.ToInt32(DDLGenero.SelectedValue);
 
         }
 

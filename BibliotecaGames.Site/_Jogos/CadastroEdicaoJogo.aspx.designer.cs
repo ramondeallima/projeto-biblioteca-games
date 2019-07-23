@@ -31,22 +31,22 @@ namespace BibliotecaGames.Site._Jogos {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVTitulo;
         
         /// <summary>
-        /// Controle ValorPago.
+        /// Controle TXTValorPago.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ValorPago;
+        protected global::System.Web.UI.WebControls.TextBox TXTValorPago;
         
         /// <summary>
-        /// Controle DataCompra.
+        /// Controle TXTDataCompra.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DataCompra;
+        protected global::System.Web.UI.WebControls.TextBox TXTDataCompra;
         
         /// <summary>
         /// Controle Imagem.

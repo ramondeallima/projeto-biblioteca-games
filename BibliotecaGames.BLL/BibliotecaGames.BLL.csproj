@@ -44,6 +44,8 @@
     <Compile Include="Autenticacao\JogosBO.cs" />
     <Compile Include="Autenticacao\LoginBO.cs" />
     <Compile Include="EditorBO.cs" />
+    <Compile Include="Exceptions\JogoInvalidoException.cs" />
+    <Compile Include="Exceptions\JogoNaoCadastradoException.cs" />
     <Compile Include="Exceptions\UsuarioNaoCadastradoException.cs" />
     <Compile Include="GeneroBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
