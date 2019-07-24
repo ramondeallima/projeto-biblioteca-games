@@ -66,10 +66,10 @@ namespace BibliotecaGames.DAL
                                                  )
                                         VALUES
                                                 (@TITULO,
-                                                 @VALOR_PAGO
-                                                 @DATA_COMPRA
-                                                 @ID_GENERO
-                                                 @ID_EDITOR
+                                                 @VALOR_PAGO,
+                                                 @DATA_COMPRA,
+                                                 @ID_GENERO,
+                                                 @ID_EDITOR,
                                                  @IMAGEM)";
 
                 command.Parameters.AddWithValue("@TITULO",      jogo.Titulo);

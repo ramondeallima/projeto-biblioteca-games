@@ -14,7 +14,7 @@
         </div>
 
         <div class="form-group">
-            <label for="DataCompra">Data Compra</label>
+            <label for="TXTDataCompra">Data Compra</label>Mo
             <asp:TextBox runat="server" ID="TXTDataCompra" TextMode="Date" CssClass="form-control"></asp:TextBox>
         </div>
 
