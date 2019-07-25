@@ -45,7 +45,7 @@ namespace BibliotecaGames.Site._Jogos
             {
                 try
                 {
-                    var caminho = $"{AppDomain.CurrentDomain.BaseDirectory}Content\\ImagensJogos\\";
+                    var caminho = $"{AppDomain.CurrentDomain.BaseDirectory}\\ImagensJogos\\";
                     var fileName = $"{DateTime.Now.ToString("yyyyMMddhhmmss")}{Imagem.FileName}";
                     Imagem.SaveAs($"{caminho}{fileName}");
                     return fileName;
