@@ -7,6 +7,7 @@
     
     <div class="container">
         <h4>Catálogo de Jogos</h4>
+        <a href="CadastroEdicaoJogo.aspx">Cadastrar Novo Jogo</a>
         <hr />
         <asp:Repeater ID="RepeaterJogos" runat="server">
             <ItemTemplate>

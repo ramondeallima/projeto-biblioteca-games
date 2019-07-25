@@ -94,15 +94,6 @@ namespace BibliotecaGames.Site._Jogos {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
-        /// Controle BTNGravar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BTNGravar;
-        
-        /// <summary>
         /// Controle VSCamposObrigatorios.
         /// </summary>
         /// <remarks>
@@ -110,5 +101,23 @@ namespace BibliotecaGames.Site._Jogos {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ValidationSummary VSCamposObrigatorios;
+        
+        /// <summary>
+        /// Controle LBLMensagem.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LBLMensagem;
+        
+        /// <summary>
+        /// Controle BTNGravar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BTNGravar;
     }
 }

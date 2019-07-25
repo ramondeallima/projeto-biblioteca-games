@@ -34,12 +34,18 @@
             <asp:DropDownList ID="DDLEditor" runat="server" DataValueField="ID" DataTextField="NOME" CssClass="form-control"></asp:DropDownList>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="DDLEditor" ErrorMessage="O preenchimento do editor é obrigatório!!"></asp:RequiredFieldValidator>
         </div>
-       
-        <asp:Button  ID="BTNGravar" Text="Gravar" CssClass="btn btn-primary" runat="server" OnClick="BTNGravar_Click"/>
+      
         <asp:ValidationSummary runat="server" 
                                ID="VSCamposObrigatorios" 
                                DisplayMode="BulletList" 
                                EnableClientScript="true" 
                                HeaderText="Alguns erros foram encontrados, verifique abaixo:"/>
+        <br />
+        <asp:Label runat="server" ID="LBLMensagem"></asp:Label>        
+        <br />
+        <asp:Button  ID="BTNGravar" Text="Gravar" CssClass="btn btn-primary" runat="server" OnClick="BTNGravar_Click"/>
+        <br />
+        <a href="Catalogo.aspx">Voltar ao catálogo de jogos</a>
+    
     </div>
 </asp:Content>

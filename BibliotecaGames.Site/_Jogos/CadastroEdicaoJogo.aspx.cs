@@ -32,11 +32,30 @@ namespace BibliotecaGames.Site._Jogos
             jogo.Titulo     = TXTTitulo.Text;
             jogo.ValorPago  = string.IsNullOrWhiteSpace(TXTValorPago.Text) ? (double?) null : Convert.ToDouble(TXTValorPago.Text);
             jogo.DataCompra = string.IsNullOrWhiteSpace(TXTDataCompra.Text) ? (DateTime?)null : Convert.ToDateTime(TXTDataCompra.Text);
-            jogo.Imagem     = GravarImagemNoDisco();
+
+            try
+            {
+                jogo.Imagem = GravarImagemNoDisco();
+            }
+            catch (Exception)
+            {
+                LBLMensagem.Text = "Ocorreu um erro ao salvar a imagem!";
+            }
+
+
             jogo.IDEditor   = Convert.ToInt32(DDLEditor.SelectedValue);
             jogo.IDGenero   = Convert.ToInt32(DDLGenero.SelectedValue);
 
-            _jogosBO.InserirNovoJogo(jogo);
+            try
+            {
+                _jogosBO.InserirNovoJogo(jogo);
+                LBLMensagem.Text = "Jogo cadastrado com sucesso!";
+                BTNGravar.Enabled = false;
+            }
+            catch (Exception)
+            {
+                LBLMensagem.Text = "Ocorreu um erro ao gravar o jogo!";
+            }
         }
 
         private string GravarImagemNoDisco()
