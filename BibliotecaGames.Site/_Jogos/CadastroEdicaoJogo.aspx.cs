@@ -118,7 +118,7 @@ namespace BibliotecaGames.Site._Jogos
 
             TXTTitulo.Text = jogo.Titulo;
             TXTValorPago.Text = jogo.ValorPago.ToString();
-            TXTDataCompra.Text = jogo.DataCompra.ToString();
+            TXTDataCompra.Text = jogo.DataCompra.HasValue ? jogo.DataCompra.Value.ToString("yyyy-MM-dd") : string.Empty;
             DDLEditor.SelectedValue = jogo.IDEditor.ToString();
             DDLGenero.SelectedValue = jogo.IDGenero.ToString();
 
@@ -145,7 +145,7 @@ namespace BibliotecaGames.Site._Jogos
 
         public bool EstaEmModoEdicao()
         {
-            return Request.QueryString.AllKeys.Contains("ID");
+            return Request.QueryString.AllKeys.Contains("id");
         }
     }
 }

@@ -29,7 +29,7 @@ namespace BibliotecaGames.BLL
                 throw new JogoNaoEncontradoException();
             }
 
-            return _jogoDAO.ObterJogoPeloID(ID);
+            return jogo;
             
         }
 
