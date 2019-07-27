@@ -24,7 +24,7 @@
         <script>     
             function redirecionarParaPaginaDoJogo(perfil, id) {
                 if (perfil == "A") {
-                    top.location.href = "CadastroEdicaoJogo.aspx?id="
+                    top.location.href = "CadastroEdicaoJogo.aspx?id="+id;
                 } else {
                     top.location.href = "DetalhesJogo.aspx?id="
                 }

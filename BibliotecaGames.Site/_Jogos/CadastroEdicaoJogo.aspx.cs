@@ -21,6 +21,11 @@ namespace BibliotecaGames.Site._Jogos
             {
                 CarregarEditoresNaCombo();
                 CarregarGenerosNaCombo();
+
+                if (EstaEmModoEdicao())
+                {
+                    CarregarDadosParaEdicao();
+                }
             }
         }
 
@@ -49,11 +54,15 @@ namespace BibliotecaGames.Site._Jogos
             try
             {
                 _jogosBO.InserirNovoJogo(jogo);
+
+                LBLMensagem.ForeColor = System.Drawing.Color.Green;
                 LBLMensagem.Text = "Jogo cadastrado com sucesso!";
+
                 BTNGravar.Enabled = false;
             }
             catch (Exception)
             {
+                LBLMensagem.ForeColor = System.Drawing.Color.Red;
                 LBLMensagem.Text = "Ocorreu um erro ao gravar o jogo!";
             }
         }
@@ -98,6 +107,45 @@ namespace BibliotecaGames.Site._Jogos
 
             DDLGenero.DataSource = generos;
             DDLGenero.DataBind();
+        }
+
+        public void CarregarDadosParaEdicao()
+        {
+            _jogosBO = new JogosBO();
+            var id = ObterIdDoJogo();
+
+            var jogo = _jogosBO.ObterJogoPeloID(id);
+
+            TXTTitulo.Text = jogo.Titulo;
+            TXTValorPago.Text = jogo.ValorPago.ToString();
+            TXTDataCompra.Text = jogo.DataCompra.ToString();
+            DDLEditor.SelectedValue = jogo.IDEditor.ToString();
+            DDLGenero.SelectedValue = jogo.IDGenero.ToString();
+
+        }
+
+        public int ObterIdDoJogo()
+        {
+            var id = 0;
+            var idQueryString = Request.QueryString["ID"];
+
+            if (int.TryParse(idQueryString, out id))
+            {
+                if (id <= 0)
+                {
+                    throw new Exception("ID Inválido");
+                }
+                return id;
+            }
+            else
+            {
+                throw new Exception("ID Inválido");
+            }
+        }
+
+        public bool EstaEmModoEdicao()
+        {
+            return Request.QueryString.AllKeys.Contains("ID");
         }
     }
 }

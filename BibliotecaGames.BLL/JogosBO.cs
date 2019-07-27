@@ -19,6 +19,20 @@ namespace BibliotecaGames.BLL
             return _jogoDAO.ObterTodosOsJogos();
         }
 
+        public Jogo ObterJogoPeloID(int ID)
+        {
+            _jogoDAO = new JogoDAO();
+            var jogo = _jogoDAO.ObterJogoPeloID(ID);
+
+            if (jogo == null)
+            {
+                throw new JogoNaoEncontradoException();
+            }
+
+            return _jogoDAO.ObterJogoPeloID(ID);
+            
+        }
+
         public void InserirNovoJogo(Jogo jogo)
         {
             ValidarJogo(jogo);
