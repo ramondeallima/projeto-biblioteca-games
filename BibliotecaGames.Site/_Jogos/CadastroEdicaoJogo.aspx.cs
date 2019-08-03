@@ -32,11 +32,8 @@ namespace BibliotecaGames.Site._Jogos
         protected void BTNGravar_Click(object sender, EventArgs e)
         {
             var _jogosBO = new JogosBO();
-            var jogo = new Jogo();
 
-            jogo.Titulo     = TXTTitulo.Text;
-            jogo.ValorPago  = string.IsNullOrWhiteSpace(TXTValorPago.Text) ? (double?) null : Convert.ToDouble(TXTValorPago.Text);
-            jogo.DataCompra = string.IsNullOrWhiteSpace(TXTDataCompra.Text) ? (DateTime?)null : Convert.ToDateTime(TXTDataCompra.Text);
+            var jogo = ObterModeloPreenchido();
 
             try
             {
@@ -47,26 +44,48 @@ namespace BibliotecaGames.Site._Jogos
                 LBLMensagem.Text = "Ocorreu um erro ao salvar a imagem!";
             }
 
-
-            jogo.IDEditor   = Convert.ToInt32(DDLEditor.SelectedValue);
-            jogo.IDGenero   = Convert.ToInt32(DDLGenero.SelectedValue);
-
             try
             {
-                _jogosBO.InserirNovoJogo(jogo);
+
+                var mensagemDeSucesso = "";
+
+                if (EstaEmModoEdicao())
+                {
+                    jogo.ID = ObterIdDoJogo();
+                    _jogosBO.AlterarJogo(jogo);
+                    mensagemDeSucesso = "Jogo alterado com sucesso!";
+                }
+                else
+                {
+                    _jogosBO.InserirNovoJogo(jogo);
+                    mensagemDeSucesso = "Jogo cadastrado com sucesso!";
+                }
 
                 LBLMensagem.ForeColor = System.Drawing.Color.Green;
-                LBLMensagem.Text = "Jogo cadastrado com sucesso!";
+                LBLMensagem.Text = mensagemDeSucesso;
 
                 BTNGravar.Enabled = false;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 LBLMensagem.ForeColor = System.Drawing.Color.Red;
-                LBLMensagem.Text = "Ocorreu um erro ao gravar o jogo!";
+                LBLMensagem.Text = "Ocorreu um erro ao gravar o jogo!"+ex.Message;
             }
         }
 
+        private Jogo ObterModeloPreenchido()
+        {
+            var jogo = new Jogo();
+
+            jogo.Titulo = TXTTitulo.Text;
+            jogo.ValorPago = string.IsNullOrWhiteSpace(TXTValorPago.Text) ? (double?)null : Convert.ToInt32(TXTValorPago.Text);
+            jogo.DataCompra = string.IsNullOrWhiteSpace(TXTDataCompra.Text) ? (DateTime?)null : Convert.ToDateTime(TXTDataCompra.Text);
+            jogo.IDEditor = Convert.ToInt32(DDLEditor.SelectedValue);
+            jogo.IDGenero = Convert.ToInt32(DDLGenero.SelectedValue);
+
+            return jogo;
+        }
+    
         private string GravarImagemNoDisco()
         {
             if (Imagem.HasFile)
@@ -89,7 +108,6 @@ namespace BibliotecaGames.Site._Jogos
                 return null;
             }
         }
-
 
         private void CarregarEditoresNaCombo()
         {

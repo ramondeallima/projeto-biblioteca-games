@@ -140,6 +140,45 @@ namespace BibliotecaGames.DAL
             }
 
         }
+
+        public int AlterarJogo(Jogo jogo)
+        {
+
+            try
+            {
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = Conexao.connection;
+                command.CommandText = @"UPDATE [dbo].[JOGOS]
+                                        SET [TITULO] = @TITULO,
+                                            [VALOR_PAGO] = @VALOR_PAGO,
+                                            [DATA_COMPRA] = @DATA_COMPRA,
+                                            [ID_EDITOR] = @ID_EDITOR,
+                                            [ID_GENERO] = @ID_GENERO
+                                        WHERE ID = @ID";
+
+                command.Parameters.AddWithValue("@TITULO", jogo.Titulo);
+                command.Parameters.AddWithValue("@VALOR_PAGO", jogo.ValorPago);
+                command.Parameters.AddWithValue("@DATA_COMPRA", jogo.DataCompra);
+                command.Parameters.AddWithValue("@ID_GENERO", jogo.IDGenero);
+                command.Parameters.AddWithValue("@ID_EDITOR", jogo.IDEditor);
+                command.Parameters.AddWithValue("@ID", jogo.ID);
+
+                Conexao.Conectar();
+
+                return command.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                Conexao.Desconectar();
+            }
+
+        }
     }
 }
 
