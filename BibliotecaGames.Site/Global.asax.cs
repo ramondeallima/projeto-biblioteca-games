@@ -12,5 +12,12 @@ namespace BibliotecaGames.Site
         protected void Application_Start(object sender, EventArgs e)
         {
         }
+
+        protected void Session_Start(object sender, EventArgs e)
+        {
+            FormsAuthentication.SignOut();
+            FormsAuthentication.RedirectToLoginPage();
+            HttpContext.Current.Response.End();
+        }
     }
 }
