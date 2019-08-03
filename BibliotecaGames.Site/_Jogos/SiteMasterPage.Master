@@ -25,6 +25,7 @@
                 <div class="navbar-nav ml-auto mr-5" id="nav-itens">
                   <a class="nav-item nav-link " href="Catalogo.aspx">Catálogo <span class="sr-only">(Página atual)</span></a>
                   <a class="nav-item nav-link " href="CadastroEdicaoJogo.aspx">Cadastro</a>
+                  <a class="nav-item nav-link " href="Catalogo.aspx?logout=logout">Sair</a>
                 </div>
               </div>
             </nav>

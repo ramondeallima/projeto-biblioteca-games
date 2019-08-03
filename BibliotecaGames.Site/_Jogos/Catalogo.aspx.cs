@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BibliotecaGames.BLL;
+using System.Web.Security;
 
 namespace BibliotecaGames.Site._Jogos
 {
@@ -19,6 +20,7 @@ namespace BibliotecaGames.Site._Jogos
             if (!Page.IsPostBack)
             {
                 CarregarJogosNoRepeater();
+                Deslogar();
             }
 
         }
@@ -29,6 +31,16 @@ namespace BibliotecaGames.Site._Jogos
 
             RepeaterJogos.DataSource = _jogosBO.ObterTodosOsJogos();
             RepeaterJogos.DataBind();
+        }
+
+        private void Deslogar()
+        {
+            if (!string.IsNullOrEmpty(Page.Request.QueryString["logout"]))
+            {
+                FormsAuthentication.SignOut();
+                Session.Abandon();
+                Response.Redirect("/_Autenticacao/Login.aspx");
+            }
         }
     }
 }
