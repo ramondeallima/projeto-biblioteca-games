@@ -4,12 +4,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         <div class="form-group">
-            <div class="row">
-                <div class="col-md-2">
-                    <label for="TxtTitulo">Título</label>
-                    <asp:TextBox runat="server" ID="TXTTitulo" CssClass="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RFVTitulo" runat="server" ControlToValidate="TXTTitulo" ErrorMessage="O preenchimento do título é obrigatório!"></asp:RequiredFieldValidator>
-                </div>
+            <div>
+                <label for="TxtTitulo">Título</label>
+                <asp:TextBox runat="server" ID="TXTTitulo" CssClass="form-control"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RFVTitulo" runat="server" ControlToValidate="TXTTitulo" ErrorMessage="O preenchimento do título é obrigatório!"></asp:RequiredFieldValidator>
             </div>
         </div>
         <div class="form-group">
